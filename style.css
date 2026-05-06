@@ -350,3 +350,257 @@ progress{
   background:gray;
   cursor:not-allowed;
 }
+/* HOME SCREEN */
+
+.home-screen{
+  min-height:100vh;
+  background: linear-gradient(
+    to bottom,
+    #ffe0f7,
+    #fff9c4
+  );
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  padding:30px;
+}
+
+/* TITLE */
+
+.main-title{
+  font-size:4rem;
+  color:#ff1493;
+  text-shadow:3px 3px white;
+  margin-bottom:10px;
+  animation:bounce 2s infinite;
+}
+
+/* BOUNCE */
+
+@keyframes bounce{
+
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+/* SUBTITLE */
+
+.subtitle{
+  font-size:1.5rem;
+  color:#ff6f00;
+  margin-bottom:30px;
+  font-weight:bold;
+}
+
+/* LOGIN */
+
+.login-section{
+  background:white;
+  padding:20px;
+  border-radius:25px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+  width:320px;
+
+  margin-bottom:40px;
+}
+
+/* MENU GRID */
+
+.menu-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(180px,1fr));
+
+  gap:25px;
+
+  width:100%;
+  max-width:1100px;
+}
+
+/* MENU CARDS */
+
+.menu-card{
+
+  background:white;
+
+  border-radius:30px;
+
+  padding:30px;
+
+  text-align:center;
+
+  cursor:pointer;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+  transition:0.3s;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:15px;
+
+  font-size:3rem;
+}
+
+/* CARD TEXT */
+
+.menu-card span{
+
+  font-size:1.2rem;
+
+  color:#ff1493;
+
+  font-weight:bold;
+}
+
+/* HOVER */
+
+.menu-card:hover{
+
+  transform:
+  translateY(-10px)
+  scale(1.05);
+
+  background:#fff0f8;
+}
+
+/* HOME BUTTON */
+
+.back-btn{
+
+  background:#ff1493;
+
+  color:white;
+
+  border:none;
+
+  padding:10px 20px;
+
+  border-radius:15px;
+
+  cursor:pointer;
+
+  margin-bottom:20px;
+
+  font-size:1rem;
+
+  transition:0.3s;
+}
+
+.back-btn:hover{
+
+  background:#ff69b4;
+
+  transform:scale(1.05);
+}
+
+/* SECTIONS */
+
+.grid-section,
+.game-section,
+.sound-game,
+.certificate{
+
+  margin:40px auto;
+
+  padding:30px;
+
+  border-radius:25px;
+
+  background:white;
+
+  max-width:900px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
+
+.button-grid button{
+
+  background:#87CEEB;
+
+  border:none;
+
+  padding:15px 20px;
+
+  border-radius:20px;
+
+  font-size:1.1rem;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.button-grid button:hover{
+
+  background:#ff1493;
+
+  color:white;
+
+  transform:scale(1.08);
+}
+
+/* BADGES */
+
+.badge{
+
+  margin-top:20px;
+
+  font-size:1.3rem;
+
+  color:green;
+
+  font-weight:bold;
+}
+
+/* CERTIFICATE */
+
+.certificate{
+
+  border:10px dashed gold;
+
+  background:#fff8dc;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .main-title{
+    font-size:2.5rem;
+  }
+
+  .menu-card{
+    font-size:2rem;
+    padding:20px;
+  }
+
+  .menu-card span{
+    font-size:1rem;
+  }
+}
