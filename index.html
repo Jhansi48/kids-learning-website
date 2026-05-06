@@ -2,11 +2,17 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
   <title>Kids Learning Fun</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+  href="style.css">
+
 </head>
 
 <body>
@@ -23,20 +29,23 @@
       Choose a fun activity!
     </p>
 
+    <!-- LOGIN BUTTON -->
+
     <div class="top-buttons">
 
-  <a href="signup.html"
-  target="_blank">
+      <a href="signup.html"
+      target="_blank">
 
-    <button class="login-btn">
+        <button class="login-btn">
 
-      🔐 Login
+          🔐 Login
 
-    </button>
+        </button>
 
-  </a>
+      </a>
 
-</div>
+    </div>
+
     <!-- MENU -->
 
     <div class="menu-grid">
@@ -137,163 +146,226 @@
 
   <!-- ALL SECTIONS -->
 
-  <div id="allSections" style="display:none;">
+  <div id="allSections"
+  style="display:none;">
 
     <!-- A-Z -->
 
-    <section class="grid-section" id="alphabet">
+    <section class="grid-section"
+    id="alphabet">
 
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
       <h2>Learn A-Z</h2>
 
+      <progress
+      id="alphabetProgress"
+      value="0"
+      max="26">
+      </progress>
+
       <div class="button-grid">
 
-        <button>A</button>
-        <button>B</button>
-        <button>C</button>
-        <button>D</button>
+        <button onclick="updateAlphabet()">A</button>
+        <button onclick="updateAlphabet()">B</button>
+        <button onclick="updateAlphabet()">C</button>
+        <button onclick="updateAlphabet()">D</button>
 
-        <button>E</button>
-        <button>F</button>
-        <button>G</button>
-        <button>H</button>
+        <button onclick="updateAlphabet()">E</button>
+        <button onclick="updateAlphabet()">F</button>
+        <button onclick="updateAlphabet()">G</button>
+        <button onclick="updateAlphabet()">H</button>
 
-        <button>I</button>
-        <button>J</button>
-        <button>K</button>
-        <button>L</button>
+        <button onclick="updateAlphabet()">I</button>
+        <button onclick="updateAlphabet()">J</button>
+        <button onclick="updateAlphabet()">K</button>
+        <button onclick="updateAlphabet()">L</button>
 
-        <button>M</button>
-        <button>N</button>
-        <button>O</button>
-        <button>P</button>
+        <button onclick="updateAlphabet()">M</button>
+        <button onclick="updateAlphabet()">N</button>
+        <button onclick="updateAlphabet()">O</button>
+        <button onclick="updateAlphabet()">P</button>
 
-        <button>Q</button>
-        <button>R</button>
-        <button>S</button>
-        <button>T</button>
+        <button onclick="updateAlphabet()">Q</button>
+        <button onclick="updateAlphabet()">R</button>
+        <button onclick="updateAlphabet()">S</button>
+        <button onclick="updateAlphabet()">T</button>
 
-        <button>U</button>
-        <button>V</button>
-        <button>W</button>
-        <button>X</button>
+        <button onclick="updateAlphabet()">U</button>
+        <button onclick="updateAlphabet()">V</button>
+        <button onclick="updateAlphabet()">W</button>
+        <button onclick="updateAlphabet()">X</button>
 
-        <button>Y</button>
-        <button>Z</button>
+        <button onclick="updateAlphabet()">Y</button>
+        <button onclick="updateAlphabet()">Z</button>
 
       </div>
 
-      <div class="badge">
+      <div class="badge"
+      id="alphabetBadge">
+
         🏅 Alphabet Ace!
+
       </div>
 
     </section>
 
     <!-- NUMBERS -->
 
-    <section class="grid-section" id="numbers">
+    <section class="grid-section"
+    id="numbers">
 
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
       <h2>Learn Numbers 1-10</h2>
 
+      <progress
+      id="numberProgress"
+      value="0"
+      max="10">
+      </progress>
+
       <div class="button-grid">
 
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
+        <button onclick="updateNumbers()">1</button>
+        <button onclick="updateNumbers()">2</button>
+        <button onclick="updateNumbers()">3</button>
+        <button onclick="updateNumbers()">4</button>
 
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
+        <button onclick="updateNumbers()">5</button>
+        <button onclick="updateNumbers()">6</button>
+        <button onclick="updateNumbers()">7</button>
+        <button onclick="updateNumbers()">8</button>
 
-        <button>9</button>
-        <button>10</button>
+        <button onclick="updateNumbers()">9</button>
+        <button onclick="updateNumbers()">10</button>
 
       </div>
 
-      <div class="badge">
+      <div class="badge"
+      id="numberBadge">
+
         🏅 Number Ninja!
+
       </div>
 
     </section>
 
     <!-- COLORS -->
 
-    <section class="grid-section" id="colors">
+    <section class="grid-section"
+    id="colors">
 
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
       <h2>Learn Colors</h2>
 
+      <progress
+      id="colorProgress"
+      value="0"
+      max="6">
+      </progress>
+
       <div class="button-grid">
 
-        <button style="background:red;color:white;">
+        <button
+        onclick="updateColors()"
+        style="background:red;color:white;">
+
           Red
+
         </button>
 
-        <button style="background:blue;color:white;">
+        <button
+        onclick="updateColors()"
+        style="background:blue;color:white;">
+
           Blue
+
         </button>
 
-        <button style="background:green;color:white;">
+        <button
+        onclick="updateColors()"
+        style="background:green;color:white;">
+
           Green
+
         </button>
 
-        <button style="background:yellow;color:black;">
+        <button
+        onclick="updateColors()"
+        style="background:yellow;color:black;">
+
           Yellow
+
         </button>
 
-        <button style="background:purple;color:white;">
+        <button
+        onclick="updateColors()"
+        style="background:purple;color:white;">
+
           Purple
+
         </button>
 
-        <button style="background:orange;color:white;">
+        <button
+        onclick="updateColors()"
+        style="background:orange;color:white;">
+
           Orange
+
         </button>
 
       </div>
 
-      <div class="badge">
+      <div class="badge"
+      id="colorBadge">
+
         🎨 Rainbow Explorer!
+
       </div>
 
     </section>
 
     <!-- SHAPES -->
 
-    <section class="grid-section" id="shapes">
+    <section class="grid-section"
+    id="shapes">
 
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
       <h2>Learn Shapes</h2>
 
+      <progress
+      id="shapeProgress"
+      value="0"
+      max="4">
+      </progress>
+
       <div class="button-grid">
 
-        <button class="shape-btn">
+        <button class="shape-btn"
+        onclick="updateShapes()">
 
           <img src="images/circle.PNG"
           alt="Circle">
@@ -302,7 +374,8 @@
 
         </button>
 
-        <button class="shape-btn">
+        <button class="shape-btn"
+        onclick="updateShapes()">
 
           <img src="images/square.PNG"
           alt="Square">
@@ -311,7 +384,8 @@
 
         </button>
 
-        <button class="shape-btn">
+        <button class="shape-btn"
+        onclick="updateShapes()">
 
           <img src="images/triangle.PNG"
           alt="Triangle">
@@ -320,7 +394,8 @@
 
         </button>
 
-        <button class="shape-btn">
+        <button class="shape-btn"
+        onclick="updateShapes()">
 
           <img src="images/heart.PNG"
           alt="Heart">
@@ -331,39 +406,68 @@
 
       </div>
 
-      <div class="badge">
+      <div class="badge"
+      id="shapeBadge">
+
         ⬛ Shape Shifter!
+
       </div>
 
     </section>
 
     <!-- FRUITS -->
 
-    <section class="grid-section" id="fruits">
+    <section class="grid-section"
+    id="fruits">
 
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
       <h2>Learn Fruits</h2>
 
+      <progress
+      id="fruitProgress"
+      value="0"
+      max="6">
+      </progress>
+
       <div class="button-grid">
 
-        <button>🍎 Apple</button>
-        <button>🍌 Banana</button>
-        <button>🍇 Grapes</button>
+        <button onclick="updateFruits()">
+          🍎 Apple
+        </button>
 
-        <button>🍊 Orange</button>
-        <button>🥭 Mango</button>
-        <button>🍓 Strawberry</button>
+        <button onclick="updateFruits()">
+          🍌 Banana
+        </button>
+
+        <button onclick="updateFruits()">
+          🍇 Grapes
+        </button>
+
+        <button onclick="updateFruits()">
+          🍊 Orange
+        </button>
+
+        <button onclick="updateFruits()">
+          🥭 Mango
+        </button>
+
+        <button onclick="updateFruits()">
+          🍓 Strawberry
+        </button>
 
       </div>
 
-      <div class="badge">
+      <div class="badge"
+      id="fruitBadge">
+
         🍎 Fruit Fantastic!
+
       </div>
 
     </section>
@@ -376,15 +480,22 @@
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
       <h2>Learn Vegetables</h2>
 
+      <progress
+      id="vegetableProgress"
+      value="0"
+      max="2">
+      </progress>
+
       <div class="flip-card-grid">
 
-        <div class="flip-card">
+        <div class="flip-card"
+        onclick="updateVegetables()">
 
           <div class="flip-card-inner">
 
@@ -405,7 +516,8 @@
 
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card"
+        onclick="updateVegetables()">
 
           <div class="flip-card-inner">
 
@@ -428,8 +540,11 @@
 
       </div>
 
-      <div class="badge">
+      <div class="badge"
+      id="vegetableBadge">
+
         🥕 Veggie Hero!
+
       </div>
 
     </section>
@@ -442,34 +557,55 @@
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
       <h2>Learn Animals</h2>
 
+      <progress
+      id="animalProgress"
+      value="0"
+      max="4">
+      </progress>
+
       <div class="button-grid">
 
-        <button class="animal-btn">
+        <button class="animal-btn"
+        onclick="updateAnimals()">
+
           🐶 Dog
+
         </button>
 
-        <button class="animal-btn">
+        <button class="animal-btn"
+        onclick="updateAnimals()">
+
           🐱 Cat
+
         </button>
 
-        <button class="animal-btn">
+        <button class="animal-btn"
+        onclick="updateAnimals()">
+
           🦁 Lion
+
         </button>
 
-        <button class="animal-btn">
+        <button class="animal-btn"
+        onclick="updateAnimals()">
+
           🐘 Elephant
+
         </button>
 
       </div>
 
-      <div class="badge">
+      <div class="badge"
+      id="animalBadge">
+
         🌟 Animal Superstar!
+
       </div>
 
     </section>
@@ -482,7 +618,7 @@
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
@@ -499,7 +635,9 @@
       </audio>
 
       <button onclick="playLion()">
+
         ▶ Play Sound
+
       </button>
 
       <div class="animal-options">
@@ -530,7 +668,9 @@
       <p id="animalResult"></p>
 
       <div class="badge">
+
         🔊 Sound Master!
+
       </div>
 
     </section>
@@ -543,7 +683,7 @@
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
@@ -555,18 +695,18 @@
         Click the gift box to reveal your surprise!
       </p>
 
-      <a href="surprise.html"
-      target="_blank"
-      class="gift-link">
+      <div class="gift-box"
+      onclick="completeLetterGame()">
 
-        <div class="gift-box">
-          🎁
-        </div>
+        🎁
 
-      </a>
+      </div>
 
-      <div class="badge">
+      <div class="badge"
+      id="letterBadge">
+
         🏅 Mystery Solver!
+
       </div>
 
     </section>
@@ -579,7 +719,7 @@
       <button class="back-btn"
       onclick="goHome()">
 
-      🏠 Home
+        🏠 Home
 
       </button>
 
@@ -597,7 +737,10 @@
 
       </div>
 
-      <button onclick="window.print()">
+      <button
+      id="certificateBtn"
+      onclick="window.print()"
+      disabled>
 
         🖨️ Print Certificate
 
