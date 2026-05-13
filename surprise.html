@@ -1,29 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <title>Surprise!</title>
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Surprise Letter</title>
+
   <style>
-    body {
-      background-color: #fffde7;
-      text-align: center;
-      font-family: Comic Sans MS, cursive;
-      padding: 4rem;
-      color: #ff1493;
+
+    body{
+
+      margin:0;
+
+      height:100vh;
+
+      display:flex;
+
+      justify-content:center;
+
+      align-items:center;
+
+      overflow:hidden;
+
+      font-family:'Comic Sans MS', cursive;
+
+      background:
+      linear-gradient(
+      135deg,
+      #ff9a9e,
+      #fad0c4,
+      #fbc2eb,
+      #a18cd1,
+      #84fab0,
+      #8fd3f4
+      );
+
+      background-size:400% 400%;
+
+      animation:bgMove 12s ease infinite;
     }
-    h1 {
-      font-size: 3rem;
+
+    @keyframes bgMove{
+
+      0%{
+        background-position:0% 50%;
+      }
+
+      50%{
+        background-position:100% 50%;
+      }
+
+      100%{
+        background-position:0% 50%;
+      }
     }
-    .message {
-      font-size: 2rem;
-      margin-top: 2rem;
+
+    .surprise-card{
+
+      background:white;
+
+      width:80%;
+
+      max-width:700px;
+
+      padding:50px;
+
+      border-radius:40px;
+
+      text-align:center;
+
+      box-shadow:
+      0 20px 40px rgba(0,0,0,0.2);
+
+      animation:pop 0.8s ease;
     }
+
+    @keyframes pop{
+
+      from{
+
+        transform:scale(0.5);
+
+        opacity:0;
+      }
+
+      to{
+
+        transform:scale(1);
+
+        opacity:1;
+      }
+    }
+
+    h1{
+
+      font-size:4rem;
+
+      margin-bottom:20px;
+
+      color:#ff1493;
+
+      animation:bounce 2s infinite;
+    }
+
+    @keyframes bounce{
+
+      0%{
+        transform:translateY(0);
+      }
+
+      50%{
+        transform:translateY(-10px);
+      }
+
+      100%{
+        transform:translateY(0);
+      }
+    }
+
+    .message{
+
+      font-size:2rem;
+
+      color:#ff6f00;
+
+      margin-top:20px;
+
+      line-height:1.6;
+    }
+
+    .letter{
+
+      font-size:7rem;
+
+      margin:25px 0;
+
+      color:#7b1fa2;
+
+      text-shadow:
+      4px 4px #ffd54f;
+
+      animation:spin 3s infinite;
+    }
+
+    @keyframes spin{
+
+      0%{
+        transform:rotate(0deg);
+      }
+
+      50%{
+        transform:rotate(10deg);
+      }
+
+      100%{
+        transform:rotate(0deg);
+      }
+    }
+
+    .stars{
+
+      font-size:2rem;
+
+      margin-top:20px;
+
+      animation:twinkle 1s infinite alternate;
+    }
+
+    @keyframes twinkle{
+
+      from{
+        opacity:0.5;
+      }
+
+      to{
+        opacity:1;
+      }
+    }
+
+    .back-btn{
+
+      margin-top:30px;
+
+      padding:14px 28px;
+
+      border:none;
+
+      border-radius:30px;
+
+      background:
+      linear-gradient(
+      to right,
+      #ff1493,
+      #ff9800
+      );
+
+      color:white;
+
+      font-size:1rem;
+
+      font-weight:bold;
+
+      cursor:pointer;
+
+      transition:0.3s;
+    }
+
+    .back-btn:hover{
+
+      transform:scale(1.08);
+    }
+
   </style>
+
 </head>
+
 <body>
-  <h1>🎉 Surprise!</h1>
-  <div class="message">
-    ✨ The hidden letter is <strong>G</strong> — Great Job, Genius Explorer!
+
+  <div class="surprise-card">
+
+    <h1>🎉 Surprise! 🎉</h1>
+
+    <div class="message">
+
+      ✨ You discovered the hidden letter ✨
+
+    </div>
+
+    <div class="letter">
+
+      G
+
+    </div>
+
+    <div class="message">
+
+      Great Job, Genius Explorer! 🌟
+
+    </div>
+
+    <div class="stars">
+
+      ⭐ 🌈 🎈 🧸 🎉
+
+    </div>
+
+    <button class="back-btn"
+    onclick="window.close()">
+
+      🔙 Close Surprise
+
+    </button>
+
   </div>
+
 </body>
+
 </html>
