@@ -142,13 +142,13 @@ MENU GRID
 
   display:grid;
 
-  grid-template-columns:repeat(4, 240px);
+  grid-template-columns:repeat(4, 260px);
 
   justify-content:center;
 
-  column-gap:70px;
+  column-gap:75px;
 
-  row-gap:80px;
+  row-gap:85px;
 
   width:100%;
 
@@ -162,9 +162,9 @@ MENU GRID
 
 .certificate-card{
 
-  width:550px !important;
+  width:600px !important;
 
-  height:170px !important;
+  height:190px !important;
 
   padding:20px;
 
@@ -196,9 +196,9 @@ DASHBOARD CARDS
 
   padding:25px;
 
-  width:240px;
+  width:260px;
 
-  height:240px;
+  height:260px;
 
   text-align:center;
 
