@@ -136,25 +136,30 @@ BOUNCE ANIMATION
 /* =========================
 MENU GRID
 ========================= */
+/* =========================
+MENU GRID
+========================= */
+
 .menu-grid{
 
   display:grid;
 
-  grid-template-columns:repeat(4, 200px);
+  grid-template-columns:repeat(4, 220px);
 
   justify-content:center;
 
-  gap:60px;
+  column-gap:35px;
+
+  row-gap:40px;
 
   width:100%;
 
-  max-width:1400px;
+  max-width:1200px;
 
   margin:40px auto;
 
   padding:20px;
 }
-
 /* =========================
 CERTIFICATE CARD
 ========================= */
@@ -191,9 +196,9 @@ DASHBOARD CARDS
 
   padding:25px;
 
-  width:200px;
+  width:220px;
 
-  height:200px;
+  height:220px;
 
   text-align:center;
 
@@ -209,7 +214,7 @@ DASHBOARD CARDS
 
   align-items:center;
 
-  gap:60px;
+  gap:20px;
 
   font-size:5rem;
 
