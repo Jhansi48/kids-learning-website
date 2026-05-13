@@ -611,7 +611,9 @@ id="vegetables">
 ANIMALS
 ========================= -->
 
-<section class="grid-section animals-section"
+<!-- ANIMALS -->
+
+<section class="grid-section"
 id="animals">
 
   <button class="back-btn"
@@ -626,29 +628,65 @@ id="animals">
   <progress
   id="animalProgress"
   value="0"
-  max="4">
+  max="8">
   </progress>
 
   <div class="button-grid">
 
     <button class="animal-btn"
     onclick="updateAnimals()">
+
       🐶 Dog
+
     </button>
 
     <button class="animal-btn"
     onclick="updateAnimals()">
+
       🐱 Cat
+
     </button>
 
     <button class="animal-btn"
     onclick="updateAnimals()">
+
       🦁 Lion
+
     </button>
 
     <button class="animal-btn"
     onclick="updateAnimals()">
+
       🐘 Elephant
+
+    </button>
+
+    <button class="animal-btn"
+    onclick="updateAnimals()">
+
+      🐵 Monkey
+
+    </button>
+
+    <button class="animal-btn"
+    onclick="updateAnimals()">
+
+      🐰 Rabbit
+
+    </button>
+
+    <button class="animal-btn"
+    onclick="updateAnimals()">
+
+      🐼 Panda
+
+    </button>
+
+    <button class="animal-btn"
+    onclick="updateAnimals()">
+
+      🦒 Giraffe
+
     </button>
 
   </div>
@@ -682,14 +720,36 @@ id="lettergame">
 
   <p>
     Click the gift box to reveal your surprise!
+ <!-- LETTER GAME -->
+
+<section class="game-section"
+id="lettergame">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>
+    🎁 Surprise Gift Box
+  </h2>
+
+  <p>
+    Click the gift box to reveal your surprise!
   </p>
 
-  <div class="gift-box"
-  onclick="openLetterPage()">
+  <a href="surprise.html"
+  target="_blank">
 
-    🎁
+    <div class="gift-box">
 
-  </div>
+      🎁
+
+    </div>
+
+  </a>
 
   <div class="badge"
   id="letterBadge">
