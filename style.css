@@ -140,11 +140,11 @@ MENU GRID
 
   display:grid;
 
-  grid-template-columns:repeat(4, 220px);
+  grid-template-columns:repeat(4, 200px);
 
   justify-content:center;
 
-  gap:30px;
+  gap:25px;
 
   width:100%;
 
@@ -189,11 +189,11 @@ DASHBOARD CARDS
 
   border-radius:45px;
 
-  padding:35px;
+  padding:25px;
 
-  width:260px;
+  width:200px;
 
-  height:240px;
+  height:200px;
 
   text-align:center;
 
@@ -823,7 +823,7 @@ GIFT BOX
 
 .menu-card:last-child{
 
-  width:520px;
+  width:430px;
 
   height:220px;
 
