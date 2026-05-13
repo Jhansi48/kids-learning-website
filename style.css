@@ -137,7 +137,9 @@ BOUNCE ANIMATION
 
   display:grid;
 
-  grid-template-columns:repeat(4, 1fr);
+  grid-template-columns:repeat(4, 260px);
+
+  justify-content:center;
 
   gap:40px;
 
@@ -148,8 +150,6 @@ BOUNCE ANIMATION
   margin:40px auto;
 
   padding:20px;
-
-  justify-items:center;
 }
 /* CERTIFICATE CARD FULL WIDTH */
 
@@ -157,9 +157,7 @@ BOUNCE ANIMATION
 
   grid-column:2 / span 2;
 
-  width:100%;
-
-  max-width:650px;
+  width:560px;
 
   height:180px;
 
@@ -167,11 +165,13 @@ BOUNCE ANIMATION
 
   flex-direction:row;
 
+  justify-content:center;
+
+  align-items:center;
+
   gap:25px;
 
   font-size:4rem;
-
-  justify-content:center;
 }
 /* =========================
 DASHBOARD CARDS
@@ -182,6 +182,8 @@ DASHBOARD CARDS
   border-radius:45px;
 
   padding:35px;
+
+  width:260px;
 
   height:240px;
 
@@ -210,7 +212,6 @@ DASHBOARD CARDS
 
   animation:float 4s ease-in-out infinite;
 }
-
 /* =========================
 CARD COLORS
 ========================= */
