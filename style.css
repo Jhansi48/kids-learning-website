@@ -865,3 +865,37 @@ MOBILE RESPONSIVE
     height:80px;
   }
 }
+.shape-btn img{
+
+  width:90px;
+
+  height:90px;
+
+  object-fit:contain;
+
+  margin-bottom:10px;
+}
+
+.shape-btn{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:10px;
+}
+
+.flip-card-front img{
+
+  width:100px;
+
+  height:100px;
+
+  object-fit:contain;
+
+  margin-bottom:10px;
+}
