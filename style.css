@@ -827,7 +827,10 @@ GIFT BOX
 
   width:430px !important;
 
-  height:200px !important;
+  height:150px !important;
+  padding:20px;
+
+  border-radius:35px;
 
   grid-column:2 / span 2;
 
