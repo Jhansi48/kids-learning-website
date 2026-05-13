@@ -1,8 +1,14 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>sign up</title>
-<link rel="stylesheet" href="signup_style.css">
+
+  <title>Parent Login</title>
+
+  <link rel="stylesheet" href="signup_style.css">
+
 </head>
+
 <body>
 
 <div class="login-container">
@@ -33,7 +39,9 @@
 
   </p>
 
-  <div id="signupSection" style="display:none;">
+  <div
+  id="signupSection"
+  style="display:none;">
 
     <h2>Create Account</h2>
 
@@ -54,6 +62,137 @@
   </div>
 
 </div>
+
+<!-- FIREBASE -->
+
+<script type="module">
+
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyBW8iUuhn0b9GDIKgIwV70Ba3DBNchU3eE",
+
+  authDomain: "kids-learning-fun-582a8.firebaseapp.com",
+
+  projectId: "kids-learning-fun-582a8",
+
+  storageBucket: "kids-learning-fun-582a8.firebasestorage.app",
+
+  messagingSenderId: "773675393706",
+
+  appId: "1:773675393706:web:5d39d722aa8f19d9d066d3",
+
+  measurementId: "G-8Q9GY4K9RD"
+};
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+/* SIGNUP */
+
+window.signup = function(){
+
+  const email =
+  document.getElementById(
+  "signupEmail"
+  ).value;
+
+  const password =
+  document.getElementById(
+  "signupPassword"
+  ).value;
+
+  createUserWithEmailAndPassword(
+    auth,
+    email,
+    password
+  )
+
+  .then(() => {
+
+    alert(
+    "Account Created Successfully!"
+    );
+
+  })
+
+  .catch((error) => {
+
+    alert(error.message);
+
+  });
+}
+
+/* LOGIN */
+
+window.login = function(){
+
+  const email =
+  document.getElementById(
+  "email"
+  ).value;
+
+  const password =
+  document.getElementById(
+  "password"
+  ).value;
+
+  signInWithEmailAndPassword(
+    auth,
+    email,
+    password
+  )
+
+  .then(() => {
+
+    alert(
+    "Login Successful!"
+    );
+
+    window.location.href =
+    "index.html";
+
+  })
+
+  .catch((error) => {
+
+    alert(error.message);
+
+  });
+}
+
+</script>
+
+<script>
+
+function showSignup(){
+
+  const section =
+  document.getElementById(
+  "signupSection"
+  );
+
+  if(section.style.display === "none"){
+
+    section.style.display = "block";
+
+  }else{
+
+    section.style.display = "none";
+  }
+}
+
+</script>
 
 </body>
 </html>
