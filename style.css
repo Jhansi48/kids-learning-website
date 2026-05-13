@@ -821,17 +821,23 @@ GIFT BOX
 }
 /* CERTIFICATE CARD */
 
-.menu-card:last-child{
+/* CERTIFICATE DASHBOARD CARD */
 
-  width:430px;
+.certificate-card{
 
-  height:220px;
+  width:430px !important;
 
-  grid-column:2 / span 1;
+  height:200px !important;
+
+  grid-column:2 / span 2;
 
   justify-self:center;
 
-  border-radius:45px;
+  flex-direction:row;
+
+  gap:20px;
+
+  font-size:4rem;
 }
 /* GLOW EFFECT */
 
