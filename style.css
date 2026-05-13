@@ -137,18 +137,41 @@ BOUNCE ANIMATION
 
   display:grid;
 
-  grid-template-columns:
-  repeat(3, 320px);
-
-  justify-content:center;
+  grid-template-columns:repeat(4, 1fr);
 
   gap:40px;
 
   width:100%;
 
-  margin-top:30px;
+  max-width:1400px;
+
+  margin:40px auto;
 
   padding:20px;
+
+  justify-items:center;
+}
+/* CERTIFICATE CARD FULL WIDTH */
+
+.menu-card.certificate-card{
+
+  grid-column:2 / span 2;
+
+  width:100%;
+
+  max-width:650px;
+
+  height:180px;
+
+  border-radius:35px;
+
+  flex-direction:row;
+
+  gap:25px;
+
+  font-size:4rem;
+
+  justify-content:center;
 }
 /* =========================
 DASHBOARD CARDS
@@ -941,30 +964,71 @@ GIFT BOX
   0 12px 22px rgba(0,0,0,0.22);
 }
 
-/* MOBILE */
-
 @media(max-width:768px){
 
-  #certificate h2{
+  .main-title{
 
-    font-size:2.3rem;
+    font-size:3rem;
   }
 
-  #certificate p{
+  .subtitle{
 
-    font-size:1.1rem;
+    font-size:1.2rem;
   }
 
-  .print-area{
+  .menu-grid{
 
-    font-size:1.6rem;
+    grid-template-columns:1fr;
 
-    padding:25px;
+    gap:25px;
   }
 
-  #certificateBtn{
+  .menu-card{
 
-    width:100%;
+    width:90%;
+
+    height:180px;
+
+    font-size:3rem;
+  }
+
+  .menu-card.certificate-card{
+
+    grid-column:auto;
+
+    width:90%;
+
+    height:180px;
+
+    flex-direction:column;
+  }
+
+  .grid-section,
+  .game-section,
+  .certificate{
+
+    width:92%;
+
+    padding:30px;
+
+    min-height:auto;
+  }
+
+  progress{
+
+    width:90%;
+  }
+
+  .flip-card{
+
+    width:180px;
+    height:180px;
+  }
+
+  .flip-card-front img{
+
+    width:80px;
+    height:80px;
   }
 }
 /* =========================
