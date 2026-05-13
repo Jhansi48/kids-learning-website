@@ -749,51 +749,49 @@ BADGES
 GIFT BOX
 ========================= */
 
-/* =========================
-GIFT BOX
-========================= */
-
 .gift-link{
   text-decoration:none;
 }
 
 .gift-box{
 
-  font-size:7rem;
+  width:150px;
 
-  margin-top:30px;
+  height:150px;
+
+  margin:30px auto;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:5rem;
+
+  background:
+  linear-gradient(
+  135deg,
+  #ff1493,
+  #ff9800
+  );
+
+  border-radius:30px;
 
   cursor:pointer;
 
-  display:inline-block;
-
-  animation:giftBounce 1.5s infinite;
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.2);
 
   transition:0.3s;
 }
 
 .gift-box:hover{
 
-  transform:scale(1.15) rotate(8deg);
+  transform:
+  scale(1.08)
+  rotate(5deg);
 }
-
-/* ANIMATION */
-
-@keyframes giftBounce{
-
-  0%{
-    transform:translateY(0);
-  }
-
-  50%{
-    transform:translateY(-15px);
-  }
-
-  100%{
-    transform:translateY(0);
-  }
-}
-
 /* =========================
 CERTIFICATE
 ========================= */
