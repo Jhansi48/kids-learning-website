@@ -133,6 +133,10 @@ BOUNCE ANIMATION
   }
 }
 
+/* =========================
+MENU GRID
+========================= */
+
 .menu-grid{
 
   display:grid;
@@ -151,17 +155,22 @@ BOUNCE ANIMATION
 
   padding:20px;
 }
-/* CERTIFICATE CARD FULL WIDTH */
 
-.menu-card.certificate-card{
+/* =========================
+CERTIFICATE CARD
+========================= */
 
-  grid-column:2 / span 2;
+.menu-card:last-child{
 
   width:560px;
 
-  height:180px;
+  height:240px;
 
-  border-radius:35px;
+  grid-column:2 / span 2;
+
+  justify-self:center;
+
+  border-radius:45px;
 
   flex-direction:row;
 
@@ -965,6 +974,10 @@ GIFT BOX
   0 12px 22px rgba(0,0,0,0.22);
 }
 
+/* =========================
+MOBILE RESPONSIVE
+========================= */
+
 @media(max-width:768px){
 
   .main-title{
@@ -993,13 +1006,13 @@ GIFT BOX
     font-size:3rem;
   }
 
-  .menu-card.certificate-card{
-
-    grid-column:auto;
+  .menu-card:last-child{
 
     width:90%;
 
     height:180px;
+
+    grid-column:auto;
 
     flex-direction:column;
   }
@@ -1031,94 +1044,4 @@ GIFT BOX
     width:80px;
     height:80px;
   }
-}
-/* =========================
-MOBILE RESPONSIVE
-========================= */
-
-@media(max-width:768px){
-
-  .main-title{
-
-    font-size:3rem;
-  }
-
-  .subtitle{
-
-    font-size:1.2rem;
-  }
-
-  .menu-grid{
-
-    grid-template-columns:1fr;
-  }
-
-  .menu-card{
-
-    height:180px;
-
-    font-size:3rem;
-  }
-
-  .grid-section,
-  .game-section,
-  .certificate{
-
-    width:92%;
-
-    padding:30px;
-
-    min-height:auto;
-  }
-
-  progress{
-
-    width:90%;
-  }
-
-  .flip-card{
-
-    width:180px;
-    height:180px;
-  }
-
-  .flip-card-front img{
-
-    width:80px;
-    height:80px;
-  }
-}
-.shape-btn img{
-
-  width:90px;
-
-  height:90px;
-
-  object-fit:contain;
-
-  margin-bottom:10px;
-}
-
-.shape-btn{
-
-  display:flex;
-
-  flex-direction:column;
-
-  align-items:center;
-
-  justify-content:center;
-
-  gap:10px;
-}
-
-.flip-card-front img{
-
-  width:100px;
-
-  height:100px;
-
-  object-fit:contain;
-
-  margin-bottom:10px;
 }
