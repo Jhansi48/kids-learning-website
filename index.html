@@ -17,126 +17,580 @@
 
 <body>
 
-  <!-- HOME SCREEN -->
+<!-- =========================
+HOME SCREEN
+========================= -->
 
-  <div class="home-screen">
+<div class="home-screen">
 
-    <h1 class="main-title">
-      🎈 Kids Learning Fun 🎈
-    </h1>
+  <h1 class="main-title">
+    🎈 Kids Learning Fun 🎈
+  </h1>
 
-    <p class="subtitle">
-      Choose a fun activity!
-    </p>
+  <p class="subtitle">
+    Choose a fun activity!
+  </p>
 
-    <!-- LOGIN BUTTON -->
+  <!-- LOGIN BUTTON -->
 
-    <div class="top-buttons">
+  <div class="top-buttons">
 
-      <a href="signup.html"
-      target="_blank">
+    <a href="signup.html"
+    target="_blank">
 
-        <button class="login-btn">
+      <button class="login-btn">
 
-          🔐 Login
+        🔐 Login
 
-        </button>
+      </button>
 
-      </a>
+    </a>
+
+  </div>
+
+  <!-- MENU GRID -->
+
+  <div class="menu-grid">
+
+    <div class="menu-card"
+    onclick="showSection('alphabet')">
+
+      🔤
+
+      <span>Learn A-Z</span>
 
     </div>
 
-    <!-- MENU -->
+    <div class="menu-card"
+    onclick="showSection('numbers')">
 
-    <div class="menu-grid">
+      🔢
 
-      <div class="menu-card"
-      onclick="showSection('alphabet')">
+      <span>Numbers</span>
 
-        🔤
+    </div>
 
-        <span>Learn A-Z</span>
+    <div class="menu-card"
+    onclick="showSection('colors')">
+
+      🌈
+
+      <span>Colors</span>
+
+    </div>
+
+    <div class="menu-card"
+    onclick="showSection('shapes')">
+
+      🔺
+
+      <span>Shapes</span>
+
+    </div>
+
+    <div class="menu-card"
+    onclick="showSection('fruits')">
+
+      🍎
+
+      <span>Fruits</span>
+
+    </div>
+
+    <div class="menu-card"
+    onclick="showSection('vegetables')">
+
+      🥕
+
+      <span>Vegetables</span>
+
+    </div>
+
+    <div class="menu-card"
+    onclick="showSection('animals')">
+
+      🐼
+
+      <span>Animals</span>
+
+    </div>
+
+    <div class="menu-card"
+    onclick="showSection('lettergame')">
+
+      🎁
+
+      <span>Guess Letter</span>
+
+    </div>
+
+    <div class="menu-card"
+    onclick="showSection('certificate')">
+
+      🎓
+
+      <span>Certificate</span>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- =========================
+ALL SECTIONS
+========================= -->
+
+<div id="allSections"
+style="display:none;">
+
+<!-- =========================
+ALPHABET
+========================= -->
+
+<section class="grid-section az-section"
+id="alphabet">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>Learn A-Z</h2>
+
+  <progress
+  id="alphabetProgress"
+  value="0"
+  max="26">
+  </progress>
+
+  <div class="button-grid">
+
+    <button onclick="updateAlphabet()">A</button>
+    <button onclick="updateAlphabet()">B</button>
+    <button onclick="updateAlphabet()">C</button>
+    <button onclick="updateAlphabet()">D</button>
+
+    <button onclick="updateAlphabet()">E</button>
+    <button onclick="updateAlphabet()">F</button>
+    <button onclick="updateAlphabet()">G</button>
+    <button onclick="updateAlphabet()">H</button>
+
+    <button onclick="updateAlphabet()">I</button>
+    <button onclick="updateAlphabet()">J</button>
+    <button onclick="updateAlphabet()">K</button>
+    <button onclick="updateAlphabet()">L</button>
+
+    <button onclick="updateAlphabet()">M</button>
+    <button onclick="updateAlphabet()">N</button>
+    <button onclick="updateAlphabet()">O</button>
+    <button onclick="updateAlphabet()">P</button>
+
+    <button onclick="updateAlphabet()">Q</button>
+    <button onclick="updateAlphabet()">R</button>
+    <button onclick="updateAlphabet()">S</button>
+    <button onclick="updateAlphabet()">T</button>
+
+    <button onclick="updateAlphabet()">U</button>
+    <button onclick="updateAlphabet()">V</button>
+    <button onclick="updateAlphabet()">W</button>
+    <button onclick="updateAlphabet()">X</button>
+
+    <button onclick="updateAlphabet()">Y</button>
+    <button onclick="updateAlphabet()">Z</button>
+
+  </div>
+
+  <div class="badge"
+  id="alphabetBadge">
+
+    🏅 Alphabet Ace!
+
+  </div>
+
+</section>
+
+<!-- =========================
+NUMBERS
+========================= -->
+
+<section class="grid-section numbers-section"
+id="numbers">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>Learn Numbers 1-10</h2>
+
+  <progress
+  id="numberProgress"
+  value="0"
+  max="10">
+  </progress>
+
+  <div class="button-grid">
+
+    <button onclick="updateNumbers()">1</button>
+    <button onclick="updateNumbers()">2</button>
+    <button onclick="updateNumbers()">3</button>
+    <button onclick="updateNumbers()">4</button>
+
+    <button onclick="updateNumbers()">5</button>
+    <button onclick="updateNumbers()">6</button>
+    <button onclick="updateNumbers()">7</button>
+    <button onclick="updateNumbers()">8</button>
+
+    <button onclick="updateNumbers()">9</button>
+    <button onclick="updateNumbers()">10</button>
+
+  </div>
+
+  <div class="badge"
+  id="numberBadge">
+
+    🏅 Number Ninja!
+
+  </div>
+
+</section>
+
+<!-- =========================
+COLORS
+========================= -->
+
+<section class="grid-section colors-section"
+id="colors">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>Learn Colors</h2>
+
+  <progress
+  id="colorProgress"
+  value="0"
+  max="10">
+  </progress>
+
+  <div class="button-grid">
+
+    <button onclick="updateColors()"
+    style="background:red;color:white;">
+      Red
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:blue;color:white;">
+      Blue
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:green;color:white;">
+      Green
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:yellow;color:black;">
+      Yellow
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:purple;color:white;">
+      Purple
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:orange;color:white;">
+      Orange
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:pink;color:white;">
+      Pink
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:brown;color:white;">
+      Brown
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:black;color:white;">
+      Black
+    </button>
+
+    <button onclick="updateColors()"
+    style="background:gray;color:white;">
+      Gray
+    </button>
+
+  </div>
+
+  <div class="badge"
+  id="colorBadge">
+
+    🎨 Rainbow Explorer!
+
+  </div>
+
+</section>
+
+<!-- =========================
+SHAPES
+========================= -->
+
+<section class="grid-section shapes-section"
+id="shapes">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>Learn Shapes</h2>
+
+  <progress
+  id="shapeProgress"
+  value="0"
+  max="6">
+  </progress>
+
+  <div class="button-grid">
+
+    <button class="shape-btn"
+    onclick="updateShapes()">
+
+      <span>⚪ Circle</span>
+
+    </button>
+
+    <button class="shape-btn"
+    onclick="updateShapes()">
+
+      <span>⬜ Square</span>
+
+    </button>
+
+    <button class="shape-btn"
+    onclick="updateShapes()">
+
+      <span>🔺 Triangle</span>
+
+    </button>
+
+    <button class="shape-btn"
+    onclick="updateShapes()">
+
+      <span>❤️ Heart</span>
+
+    </button>
+
+    <button class="shape-btn"
+    onclick="updateShapes()">
+
+      <span>⭐ Star</span>
+
+    </button>
+
+    <button class="shape-btn"
+    onclick="updateShapes()">
+
+      <span>▭ Rectangle</span>
+
+    </button>
+
+  </div>
+
+  <div class="badge"
+  id="shapeBadge">
+
+    ⬛ Shape Shifter!
+
+  </div>
+
+</section>
+
+<!-- =========================
+FRUITS
+========================= -->
+
+<section class="grid-section fruits-section"
+id="fruits">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>Learn Fruits</h2>
+
+  <progress
+  id="fruitProgress"
+  value="0"
+  max="10">
+  </progress>
+
+  <div class="button-grid">
+
+    <button onclick="updateFruits()">🍎 Apple</button>
+    <button onclick="updateFruits()">🍌 Banana</button>
+    <button onclick="updateFruits()">🍇 Grapes</button>
+    <button onclick="updateFruits()">🍊 Orange</button>
+
+    <button onclick="updateFruits()">🥭 Mango</button>
+    <button onclick="updateFruits()">🍓 Strawberry</button>
+    <button onclick="updateFruits()">🍍 Pineapple</button>
+    <button onclick="updateFruits()">🍉 Watermelon</button>
+
+    <button onclick="updateFruits()">🍒 Cherry</button>
+    <button onclick="updateFruits()">🥝 Kiwi</button>
+
+  </div>
+
+  <div class="badge"
+  id="fruitBadge">
+
+    🍎 Fruit Fantastic!
+
+  </div>
+
+</section>
+
+<!-- =========================
+VEGETABLES
+========================= -->
+
+<section class="grid-section vegetables-section"
+id="vegetables">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>Learn Vegetables</h2>
+
+  <progress
+  id="vegetableProgress"
+  value="0"
+  max="6">
+  </progress>
+
+  <div class="flip-card-grid">
+
+    <div class="flip-card"
+    onclick="updateVegetables()">
+
+      <div class="flip-card-inner">
+
+        <div class="flip-card-front">
+          🥕 Carrot
+        </div>
+
+        <div class="flip-card-back">
+          Good for eyes 👀
+        </div>
 
       </div>
 
-      <div class="menu-card"
-      onclick="showSection('numbers')">
+    </div>
 
-        🔢
+    <div class="flip-card"
+    onclick="updateVegetables()">
 
-        <span>Numbers</span>
+      <div class="flip-card-inner">
 
-      </div>
+        <div class="flip-card-front">
+          🥔 Potato
+        </div>
 
-      <div class="menu-card"
-      onclick="showSection('colors')">
-
-        🌈
-
-        <span>Colors</span>
-
-      </div>
-
-      <div class="menu-card"
-      onclick="showSection('shapes')">
-
-        🔺
-
-        <span>Shapes</span>
+        <div class="flip-card-back">
+          Gives energy ⚡
+        </div>
 
       </div>
 
-      <div class="menu-card"
-      onclick="showSection('fruits')">
+    </div>
 
-        🍎
+    <div class="flip-card"
+    onclick="updateVegetables()">
 
-        <span>Fruits</span>
+      <div class="flip-card-inner">
 
-      </div>
+        <div class="flip-card-front">
+          🍅 Tomato
+        </div>
 
-      <div class="menu-card"
-      onclick="showSection('vegetables')">
-
-        🥕
-
-        <span>Vegetables</span>
-
-      </div>
-
-      <div class="menu-card"
-      onclick="showSection('animals')">
-
-        🐼
-
-        <span>Animals</span>
+        <div class="flip-card-back">
+          Healthy skin ❤️
+        </div>
 
       </div>
 
-      <div class="menu-card"
-      onclick="showSection('soundgame')">
+    </div>
 
-        🔊
+    <div class="flip-card"
+    onclick="updateVegetables()">
 
-        <span>Guess Sound</span>
+      <div class="flip-card-inner">
+
+        <div class="flip-card-front">
+          🥦 Broccoli
+        </div>
+
+        <div class="flip-card-back">
+          Strong bones 💪
+        </div>
 
       </div>
 
-      <div class="menu-card"
-      onclick="showSection('lettergame')">
+    </div>
 
-        🎁
+    <div class="flip-card"
+    onclick="updateVegetables()">
 
-        <span>Guess Letter</span>
+      <div class="flip-card-inner">
+
+        <div class="flip-card-front">
+          🌽 Corn
+        </div>
+
+        <div class="flip-card-back">
+          Full of vitamins 🌟
+        </div>
 
       </div>
 
-      <div class="menu-card"
-      onclick="showSection('certificate')">
+    </div>
 
-        🎓
+    <div class="flip-card"
+    onclick="updateVegetables()">
 
-        <span>Certificate</span>
+      <div class="flip-card-inner">
+
+        <div class="flip-card-front">
+          🥒 Cucumber
+        </div>
+
+        <div class="flip-card-back">
+          Keeps us cool ❄️
+        </div>
 
       </div>
 
@@ -144,614 +598,150 @@
 
   </div>
 
-  <!-- ALL SECTIONS -->
+  <div class="badge"
+  id="vegetableBadge">
 
-  <div id="allSections"
-  style="display:none;">
-
-    <!-- A-Z -->
-
-    <section class="grid-section"
-    id="alphabet">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>Learn A-Z</h2>
-
-      <progress
-      id="alphabetProgress"
-      value="0"
-      max="26">
-      </progress>
-
-      <div class="button-grid">
-
-        <button onclick="updateAlphabet()">A</button>
-        <button onclick="updateAlphabet()">B</button>
-        <button onclick="updateAlphabet()">C</button>
-        <button onclick="updateAlphabet()">D</button>
-
-        <button onclick="updateAlphabet()">E</button>
-        <button onclick="updateAlphabet()">F</button>
-        <button onclick="updateAlphabet()">G</button>
-        <button onclick="updateAlphabet()">H</button>
-
-        <button onclick="updateAlphabet()">I</button>
-        <button onclick="updateAlphabet()">J</button>
-        <button onclick="updateAlphabet()">K</button>
-        <button onclick="updateAlphabet()">L</button>
-
-        <button onclick="updateAlphabet()">M</button>
-        <button onclick="updateAlphabet()">N</button>
-        <button onclick="updateAlphabet()">O</button>
-        <button onclick="updateAlphabet()">P</button>
-
-        <button onclick="updateAlphabet()">Q</button>
-        <button onclick="updateAlphabet()">R</button>
-        <button onclick="updateAlphabet()">S</button>
-        <button onclick="updateAlphabet()">T</button>
-
-        <button onclick="updateAlphabet()">U</button>
-        <button onclick="updateAlphabet()">V</button>
-        <button onclick="updateAlphabet()">W</button>
-        <button onclick="updateAlphabet()">X</button>
-
-        <button onclick="updateAlphabet()">Y</button>
-        <button onclick="updateAlphabet()">Z</button>
-
-      </div>
-
-      <div class="badge"
-      id="alphabetBadge">
-
-        🏅 Alphabet Ace!
-
-      </div>
-
-    </section>
-
-    <!-- NUMBERS -->
-
-    <section class="grid-section"
-    id="numbers">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>Learn Numbers 1-10</h2>
-
-      <progress
-      id="numberProgress"
-      value="0"
-      max="10">
-      </progress>
-
-      <div class="button-grid">
-
-        <button onclick="updateNumbers()">1</button>
-        <button onclick="updateNumbers()">2</button>
-        <button onclick="updateNumbers()">3</button>
-        <button onclick="updateNumbers()">4</button>
-
-        <button onclick="updateNumbers()">5</button>
-        <button onclick="updateNumbers()">6</button>
-        <button onclick="updateNumbers()">7</button>
-        <button onclick="updateNumbers()">8</button>
-
-        <button onclick="updateNumbers()">9</button>
-        <button onclick="updateNumbers()">10</button>
-
-      </div>
-
-      <div class="badge"
-      id="numberBadge">
-
-        🏅 Number Ninja!
-
-      </div>
-
-    </section>
-
-    <!-- COLORS -->
-
-    <section class="grid-section"
-    id="colors">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>Learn Colors</h2>
-
-      <progress
-      id="colorProgress"
-      value="0"
-      max="6">
-      </progress>
-
-      <div class="button-grid">
-
-        <button
-        onclick="updateColors()"
-        style="background:red;color:white;">
-
-          Red
-
-        </button>
-
-        <button
-        onclick="updateColors()"
-        style="background:blue;color:white;">
-
-          Blue
-
-        </button>
-
-        <button
-        onclick="updateColors()"
-        style="background:green;color:white;">
-
-          Green
-
-        </button>
-
-        <button
-        onclick="updateColors()"
-        style="background:yellow;color:black;">
-
-          Yellow
-
-        </button>
-
-        <button
-        onclick="updateColors()"
-        style="background:purple;color:white;">
-
-          Purple
-
-        </button>
-
-        <button
-        onclick="updateColors()"
-        style="background:orange;color:white;">
-
-          Orange
-
-        </button>
-
-      </div>
-
-      <div class="badge"
-      id="colorBadge">
-
-        🎨 Rainbow Explorer!
-
-      </div>
-
-    </section>
-
-    <!-- SHAPES -->
-
-    <section class="grid-section"
-    id="shapes">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>Learn Shapes</h2>
-
-      <progress
-      id="shapeProgress"
-      value="0"
-      max="4">
-      </progress>
-
-      <div class="button-grid">
-
-        <button class="shape-btn"
-        onclick="updateShapes()">
-
-          <img src="images/circle.PNG"
-          alt="Circle">
-
-          <span>Circle</span>
-
-        </button>
-
-        <button class="shape-btn"
-        onclick="updateShapes()">
-
-          <img src="images/square.PNG"
-          alt="Square">
-
-          <span>Square</span>
-
-        </button>
-
-        <button class="shape-btn"
-        onclick="updateShapes()">
-
-          <img src="images/triangle.PNG"
-          alt="Triangle">
-
-          <span>Triangle</span>
-
-        </button>
-
-        <button class="shape-btn"
-        onclick="updateShapes()">
-
-          <img src="images/heart.PNG"
-          alt="Heart">
-
-          <span>Heart</span>
-
-        </button>
-
-      </div>
-
-      <div class="badge"
-      id="shapeBadge">
-
-        ⬛ Shape Shifter!
-
-      </div>
-
-    </section>
-
-    <!-- FRUITS -->
-
-    <section class="grid-section"
-    id="fruits">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>Learn Fruits</h2>
-
-      <progress
-      id="fruitProgress"
-      value="0"
-      max="6">
-      </progress>
-
-      <div class="button-grid">
-
-        <button onclick="updateFruits()">
-          🍎 Apple
-        </button>
-
-        <button onclick="updateFruits()">
-          🍌 Banana
-        </button>
-
-        <button onclick="updateFruits()">
-          🍇 Grapes
-        </button>
-
-        <button onclick="updateFruits()">
-          🍊 Orange
-        </button>
-
-        <button onclick="updateFruits()">
-          🥭 Mango
-        </button>
-
-        <button onclick="updateFruits()">
-          🍓 Strawberry
-        </button>
-
-      </div>
-
-      <div class="badge"
-      id="fruitBadge">
-
-        🍎 Fruit Fantastic!
-
-      </div>
-
-    </section>
-
-    <!-- VEGETABLES -->
-
-    <section class="grid-section"
-    id="vegetables">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>Learn Vegetables</h2>
-
-      <progress
-      id="vegetableProgress"
-      value="0"
-      max="2">
-      </progress>
-
-      <div class="flip-card-grid">
-
-        <div class="flip-card"
-        onclick="updateVegetables()">
-
-          <div class="flip-card-inner">
-
-            <div class="flip-card-front">
-
-              <img src="images/carrot.PNG"
-              alt="Carrot">
-
-            </div>
-
-            <div class="flip-card-back">
-
-              <p>🥕 Carrot</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="flip-card"
-        onclick="updateVegetables()">
-
-          <div class="flip-card-inner">
-
-            <div class="flip-card-front">
-
-              <img src="images/potato.PNG"
-              alt="Potato">
-
-            </div>
-
-            <div class="flip-card-back">
-
-              <p>🥔 Potato</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="badge"
-      id="vegetableBadge">
-
-        🥕 Veggie Hero!
-
-      </div>
-
-    </section>
-
-    <!-- ANIMALS -->
-
-    <section class="grid-section"
-    id="animals">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>Learn Animals</h2>
-
-      <progress
-      id="animalProgress"
-      value="0"
-      max="4">
-      </progress>
-
-      <div class="button-grid">
-
-        <button class="animal-btn"
-        onclick="updateAnimals()">
-
-          🐶 Dog
-
-        </button>
-
-        <button class="animal-btn"
-        onclick="updateAnimals()">
-
-          🐱 Cat
-
-        </button>
-
-        <button class="animal-btn"
-        onclick="updateAnimals()">
-
-          🦁 Lion
-
-        </button>
-
-        <button class="animal-btn"
-        onclick="updateAnimals()">
-
-          🐘 Elephant
-
-        </button>
-
-      </div>
-
-      <div class="badge"
-      id="animalBadge">
-
-        🌟 Animal Superstar!
-
-      </div>
-
-    </section>
-
-    <!-- SOUND GAME -->
-
-    <section class="sound-game"
-    id="soundgame">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>
-        🎧 Which Animal Makes This Sound?
-      </h2>
-
-      <audio id="lionAudio">
-
-        <source
-        src="sounds/lion.mp3"
-        type="audio/mp3">
-
-      </audio>
-
-      <button onclick="playLion()">
-
-        ▶ Play Sound
-
-      </button>
-
-      <div class="animal-options">
-
-        <button class="animal-btn"
-        onclick="checkAnimal('dog')">
-
-          🐶 Dog
-
-        </button>
-
-        <button class="animal-btn"
-        onclick="checkAnimal('lion')">
-
-          🦁 Lion
-
-        </button>
-
-        <button class="animal-btn"
-        onclick="checkAnimal('cat')">
-
-          🐱 Cat
-
-        </button>
-
-      </div>
-
-      <p id="animalResult"></p>
-
-      <div class="badge">
-
-        🔊 Sound Master!
-
-      </div>
-
-    </section>
-
-    <!-- LETTER GAME -->
-
-    <section class="game-section"
-    id="lettergame">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>
-        🎁 Guess the Hidden Letter
-      </h2>
-
-      <p>
-        Click the gift box to reveal your surprise!
-      </p>
-
-      <div class="gift-box"
-      onclick="completeLetterGame()">
-
-        🎁
-
-      </div>
-
-      <div class="badge"
-      id="letterBadge">
-
-        🏅 Mystery Solver!
-
-      </div>
-
-    </section>
-
-    <!-- CERTIFICATE -->
-
-    <section class="certificate"
-    id="certificate">
-
-      <button class="back-btn"
-      onclick="goHome()">
-
-        🏠 Home
-
-      </button>
-
-      <h2>
-        🎓 Certificate of Achievement
-      </h2>
-
-      <p>
-        Great job completing your learning adventure!
-      </p>
-
-      <div class="print-area">
-
-        🌟 Certified Smart Explorer 🌟
-
-      </div>
-
-      <button
-      id="certificateBtn"
-      onclick="window.print()"
-      disabled>
-
-        🖨️ Print Certificate
-
-      </button>
-
-    </section>
+    🥕 Veggie Hero!
 
   </div>
 
-  <script src="script.js"></script>
+</section>
+
+<!-- =========================
+ANIMALS
+========================= -->
+
+<section class="grid-section animals-section"
+id="animals">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>Learn Animals</h2>
+
+  <progress
+  id="animalProgress"
+  value="0"
+  max="4">
+  </progress>
+
+  <div class="button-grid">
+
+    <button class="animal-btn"
+    onclick="updateAnimals()">
+      🐶 Dog
+    </button>
+
+    <button class="animal-btn"
+    onclick="updateAnimals()">
+      🐱 Cat
+    </button>
+
+    <button class="animal-btn"
+    onclick="updateAnimals()">
+      🦁 Lion
+    </button>
+
+    <button class="animal-btn"
+    onclick="updateAnimals()">
+      🐘 Elephant
+    </button>
+
+  </div>
+
+  <div class="badge"
+  id="animalBadge">
+
+    🌟 Animal Superstar!
+
+  </div>
+
+</section>
+
+<!-- =========================
+LETTER GAME
+========================= -->
+
+<section class="game-section"
+id="lettergame">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>
+    🎁 Guess the Hidden Letter
+  </h2>
+
+  <p>
+    Click the gift box to reveal your surprise!
+  </p>
+
+  <div class="gift-box"
+  onclick="openLetterPage()">
+
+    🎁
+
+  </div>
+
+  <div class="badge"
+  id="letterBadge">
+
+    🏅 Mystery Solver!
+
+  </div>
+
+</section>
+
+<!-- =========================
+CERTIFICATE
+========================= -->
+
+<section class="certificate"
+id="certificate">
+
+  <button class="back-btn"
+  onclick="goHome()">
+
+    🏠 Home
+
+  </button>
+
+  <h2>
+    🎓 Certificate of Achievement
+  </h2>
+
+  <p>
+    Great job completing your learning adventure!
+  </p>
+
+  <div class="print-area">
+
+    🌟 Certified Smart Explorer 🌟
+
+  </div>
+
+  <button
+  id="certificateBtn"
+  onclick="window.print()"
+  disabled>
+
+    🖨️ Print Certificate
+
+  </button>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
