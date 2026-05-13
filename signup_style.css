@@ -31,13 +31,13 @@ body{
 
   box-shadow:0 10px 30px rgba(0,0,0,0.2);
 
-  position:absolute;
+  display:flex;
 
-  top:50%;
+flex-direction:column;
 
-  right:60px;
+justify-content:center;
 
-  transform:translateY(-50%);
+align-items:center;
 
   text-align:center;
 }
