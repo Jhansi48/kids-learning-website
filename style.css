@@ -133,24 +133,20 @@ BOUNCE ANIMATION
   }
 }
 
-/* =========================
-MENU GRID
-========================= */
-
 .menu-grid{
 
   display:grid;
 
   grid-template-columns:
-  repeat(3, 1fr);
+  repeat(3, 320px);
+
+  justify-content:center;
 
   gap:40px;
 
   width:100%;
 
-  max-width:1300px;
-
-  margin-top:40px;
+  margin-top:30px;
 
   padding:20px;
 }
