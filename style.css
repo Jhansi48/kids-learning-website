@@ -787,35 +787,20 @@ GIFT BOX
   scale(1.08)
   rotate(5deg);
 }
-/* =========================
-CERTIFICATE SECTION
-========================= */
+/* CERTIFICATE CARD */
 
-#certificate{
+.menu-card:last-child{
 
-  background:
-  linear-gradient(
-  135deg,
-  #fff8dc,
-  #ffe082,
-  #ffd54f
-  );
+  width:520px;
 
-  border:12px dashed gold;
+  height:220px;
 
-  text-align:center;
+  grid-column:2 / span 1;
 
-  position:relative;
+  justify-self:center;
 
-  overflow:hidden;
-
-  box-shadow:
-  0 20px 45px rgba(255,193,7,0.35),
-  0 0 40px rgba(255,215,0,0.35);
-
-  animation:certificateGlow 3s infinite alternate;
+  border-radius:45px;
 }
-
 /* GLOW EFFECT */
 
 @keyframes certificateGlow{
